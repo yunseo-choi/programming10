@@ -1,0 +1,21 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main() {
+	double changecm(int inch);
+	int value;
+
+	printf("inch 값을 입력하시오 : ");
+	scanf("%d", &value, sizeof(int));
+
+	printf("%d inch는 %.2lf cm입니다.\n", value, changecm(value));
+
+	return 0;
+
+}
+
+double changecm(int inch)
+{
+	double cm;
+	cm = (inch * 2.54);
+	return(cm);
+}
